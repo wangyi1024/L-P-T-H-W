@@ -84,7 +84,11 @@ try:            # 尝试执行 try 块中的代码，如果发生 EOFError 异�
 
             print(question)                     # 显示问题
 
-            input("> ")                         
+              
+            input("> ") 
+                                  
             print(f"ANSWER: {answer}\n\n")      # 显示答案
+            
+
 except EOFError:                                # 捕获Ctrl-D退出信号
     print("\nBye")                              # 退出程序
